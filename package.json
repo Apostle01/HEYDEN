@@ -1,0 +1,25 @@
+{
+  "name": "heyden",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Apostle01/HEYDEN.git)"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jsdom": "^24.0.0"
+  },
+    "jest": {
+      "setupFiles": [
+        "<rootDir>/jest.setup.js"
+      ]
+    }
+}

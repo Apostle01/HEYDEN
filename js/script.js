@@ -1,4 +1,38 @@
 const emojis = ["❤️","❤️","😍","😍","😎","😎","🤣","🤣","✌️","✌️","😭","😭","💕","💕","😊","😊"];
+
+// Initialize the timer variable
+let timer;
+
+// Start the timer
+function startTimer() {
+    const timerDisplay = document.getElementById('timerDisplay');
+    let timeLeft = 60; // Set the initial time (in seconds)
+    timerDisplay.textContent = timeLeft; // Display initial time
+
+    timer = setInterval(function() {
+        timeLeft--;
+        timerDisplay.textContent = timeLeft; // Update the display
+
+        if (timeLeft <= 0) {
+            endGame();
+        }
+    }, 1000); // 1 second
+}
+
+// End the game when the timer runs out
+function endGame() {
+    clearInterval(timer); // Clear the timer
+    alert('Time is up! Game over!');
+}
+
+// Restart the timer
+function restartTimer() {
+    clearInterval(timer); // Clear the timer
+    const timerDisplay = document.getElementById('timerDisplay');
+    timerDisplay.textContent = '60'; // Reset the timer display
+    startTimer(); // Restart the timer
+}
+
 var shuf_emojis = emojis.sort(() => (Math.random() > .5) ? 2 : -1);
 for ( var i =0; i<emojis.length; i++){
     let box = document.createElement('div')
