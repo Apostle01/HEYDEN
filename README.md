@@ -107,5 +107,26 @@ Copy code
 
 Replace `/path/to/code-validation-screenshot.png` and `/path/to/test-results-screenshot.png` with the actual file paths of your screenshots. Make sure to place the screenshots in the appropriate directory relative to your README.md file.
 
-
+Colors adapted.
+Background Color:
+Main background color: #0a3c2f
+Game container background color: #f0f0f0
+Header background color: #0d614b
+Button background color: #fff
+Timer background color: #209d7b
+Score box background color: #fff
+Box open color: greenyellow
+Box match color: greenyellow
+Text Color:
+Main text color: #fff
+Button text color: #267c65
+Timer text color: #333
+Score box text color: #209d7b
+Fonts:
+Font Family: monospace
+Font Size:
+Header: 3em
+Reset button and timer: 1.5em
+Timer: 24px
+Score box: 3em
 

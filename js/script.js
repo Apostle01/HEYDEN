@@ -1,73 +1,85 @@
 const emojis = ["❤️","❤️","😍","😍","😎","😎","🤣","🤣","✌️","✌️","😭","😭","💕","💕","😊","😊"];
 
-// Initialize the timer variable
-let timer;
+// Initialize game object with score and timer properties
+let game = {
+    score: 0,
+    timer: 60, // Initial time in seconds
+    // Other properties...
+};
 
-// Start the timer
+// Function to start the timer
 function startTimer() {
-    const timerDisplay = document.getElementById('timerDisplay');
-    let timeLeft = 60; // Set the initial time (in seconds)
-    timerDisplay.textContent = timeLeft; // Display initial time
+    let timerDisplay = document.getElementById('timer');
+    timerDisplay.innerText = game.timer;
 
-    timer = setInterval(function() {
-        timeLeft--;
-        timerDisplay.textContent = timeLeft; // Update the display
+    // Update the timer every second
+    let timerInterval = setInterval(() => {
+        game.timer--;
+        timerDisplay.innerText = game.timer;
 
-        if (timeLeft <= 0) {
+        // End the game when the timer reaches 0
+        if (game.timer === 0) {
+            clearInterval(timerInterval);
             endGame();
         }
-    }, 1000); // 1 second
+    }, 1000); // Update timer every 1000 milliseconds (1 second)
 }
 
-// End the game when the timer runs out
+// Function to initialize the game
+function initializeGame() {
+    game.score = 0;
+    game.timer = 60; // Reset timer to initial value
+    startTimer(); // Start the timer
+    updateScore(); // Update the score display
+}
+
+// Function to update the score display
+function updateScore() {
+    let scoreDisplay = document.getElementById('score');
+    scoreDisplay.innerText = game.score;
+}
+
+// Function to handle game end
 function endGame() {
-    clearInterval(timer); // Clear the timer
-    alert('Time is up! Game over!');
+    alert('Game Over! Your final score is: ' + game.score);
+    // Any additional logic for ending the game...
 }
 
-// Restart the timer
-function restartTimer() {
-    clearInterval(timer); // Clear the timer
-    const timerDisplay = document.getElementById('timerDisplay');
-    timerDisplay.textContent = '60'; // Reset the timer display
-    startTimer(); // Restart the timer
-}
-
-var shuf_emojis = emojis.sort(() => (Math.random() > .5) ? 2 : -1);
-for ( var i =0; i<emojis.length; i++){
-    let box = document.createElement('div')
-    box.className = 'item';
-    box.innerHTML = shuf_emojis[i]
-
-    box.onclick = function(){
-        this.classList.add('boxOpen')
-        setTimeout(function(){
-            if(document.querySelectorAll('.boxOpen').length > 1){
-                if(document.querySelectorAll('.boxOpen')[0].innerHTML ==
-                    document.querySelectorAll('.boxOpen')[1].innerHTML){
-                        document.querySelectorAll('.boxOpen')[0].classList.add
-                        ('boxMatch')
-                        document.querySelectorAll('.boxOpen')[1].classList.add
-                        ('boxMatch')
-
-                        document.querySelectorAll('.boxOpen')[1].classList.remove
-                        ('boxOpen')
-                        document.querySelectorAll('.boxOpen')[0].classList.remove
-                        ('boxOpen')
-
-                        if(document.querySelectorAll('.boxMatch').length == emojis.length){
-                            alert('win')
-                        }
-                    } else {
-                        document.querySelectorAll('.boxOpen')[1].classList.remove
-                        ('boxOpen')
-                        document.querySelectorAll('.boxOpen')[0].classList.remove
-                        ('boxOpen')
-
+// Function to handle click on game box
+function handleBoxClick() {
+    this.classList.add('boxOpen');
+    setTimeout(() => {
+        let openBoxes = document.querySelectorAll('.boxOpen');
+        if (openBoxes.length > 1) {
+            if (openBoxes[0].innerHTML === openBoxes[1].innerHTML) {
+                openBoxes.forEach(box => box.classList.add('boxMatch'));
+                game.score++;
+                updateScore();
+                if (game.score === emojis.length / 2) {
+                    alert('Congratulations! You won!');
+                    endGame();
                 }
+            } else {
+                openBoxes.forEach(box => box.classList.remove('boxOpen'));
             }
-        },500)
-    }
-
-    document.querySelector('.game').appendChild(box);
+        }
+    }, 500);
 }
+
+// Function to create game boxes
+function createGameBoxes() {
+    let shuffledEmojis = emojis.sort(() => Math.random() - 0.5);
+    let gameContainer = document.querySelector('.game');
+    shuffledEmojis.forEach(emoji => {
+        let box = document.createElement('div');
+        box.className = 'item';
+        box.innerHTML = emoji;
+        box.addEventListener('click', handleBoxClick);
+        gameContainer.appendChild(box);
+    });
+}
+
+// Example usage:
+// Call initializeGame() function to start the game
+initializeGame();
+createGameBoxes();

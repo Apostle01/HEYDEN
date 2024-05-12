@@ -1,4 +1,4 @@
-const { game, newGame, playerMoves } = require("../src/game");
+const { game, newGame, playerMoves, initializeGame } = require("../src/game");
 
 beforeAll(() => {
     let fs = require("fs");
@@ -31,6 +31,7 @@ describe("newGame works correctly", () => {
         game.score = 42;
         game.playerMoves = ["button1", "button2"];
         game.playerMoves = ["button1", "button2"];
+        initializeGame();
         document.getElementById("score").innertext = "42";
         newGame();
     });
