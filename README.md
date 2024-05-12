@@ -71,8 +71,6 @@ HEYDEN is a memory game built using HTML, CSS, and JavaScript. It challenges pla
 ## Installation
 
 1. Clone the repository:
-
-```bash
 git clone https://github.com/Apostle01/HEYDEN.git
 Navigate to the project directory:
 bash
@@ -101,11 +99,6 @@ Screenshots
 Code Validation
 
 Test Results
-
-css
-Copy code
-
-Replace `/path/to/code-validation-screenshot.png` and `/path/to/test-results-screenshot.png` with the actual file paths of your screenshots. Make sure to place the screenshots in the appropriate directory relative to your README.md file.
 
 Colors adapted.
 Background Color:
