@@ -79,6 +79,17 @@ function createGameBoxes() {
     });
 }
 
+function pauseGame() {
+    if (lockBoard) return;
+    clearInterval(timer);
+}
+
+function exitGame() {
+    if (confirm('Are you sure you want to exit the game?')) {
+        window.location.reload();
+    }
+}
+
 // Example usage:
 // Call initializeGame() function to start the game
 initializeGame();

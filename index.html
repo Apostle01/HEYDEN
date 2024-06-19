@@ -7,14 +7,30 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="instructions" class="#">Instructions</a></li>
+            <li><a href="settings" id="settings">Settings</a></li>
+          </ul>
+        </nav>
+    </header>
+    
     <div class="containner">
         <h2>Memory Game</h2>
         <div class="game"></div>
         <div class="score">Score: <span id="score">0</span></div>
         <div class="timer">Time: <span id="timer">0</span></div>
-        <button class="reset" onclick="window.location.reload();">Reset Game</button>
-    </div>
+    </div> 
+    <!-- <button class="pause" onclick="window.location.reload();">Pause Game</div>  -->
+    <button class="reset" onclick="window.location.reload();">Reset Game</button>
+    
 </body>
+<!-- <footer>
+    <p><a href="#" id="accessibility-info">Accessibility Information</a> | <a href="#" id="privacy-policy">Privacy Policy</a></p>
+</footer> -->
     <script src="js/script.js"></script>
     <script src="src/game.js"></script>
 </html>
+
