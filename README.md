@@ -1,98 +1,131 @@
-# ![Website logo](/docs/am-i-responsive.png)
+# ![HEYDEN memory card game. Screenshot of the website.](/docs/am-i-responsive.png)
+
+Click here to access the game.https://apostle01.github.io/HEYDEN/
 
 ---
 
 # Memory Cards
 
-*A game designed to test your memory. Can you correctly recall the order of a shuffled deck of cards?*
+-[A game designed to test your memory. Can you correctly recall the order of a shuffled deck of cards?]
 
-This memory card game is a fun, enjoyable way to put your memory to the test. You can select the length of the series of cards, look for them as long as you like, before hiding them and replicating the order in your guesses. It provides value to the user through the enjoyable gameplay and replayability, allowing the user to set how difficult it is by selecting the number of cards to memorise. The development followed a mobile-first approach, focusing on playability whilst on long car, train, or plane journeys. Bootstrap 5 and jQuery 3 libraries were used to streamline the development of the code. <br>
-The game concept is inspired by the Speed Cards discipline of the [World Memory Championships](https://www.worldmemorychampionships.com/sport/) in which the competitors are challenged, against the clock, to remember the order of a shuffled deck of cards and to correctly repeat that order. The key target audience are those interested in trying to memorise a deck of cards themselves, but don't worry, you can start with as little as one card and work your way up to a Memory Champion! The site is also of use to those currently competing who have an urge to practice whilst on the go or when they do not have access to a physical deck of cards.
+# Memory Game
 
-![A mock-up image of the website](/documentation/site-mock-up.png)
+Welcome to the Memory Game! This is a fun and engaging game built using HTML, CSS, and JavaScript. The objective of the game is to match all pairs of cards with the same emoji within the allotted time. 
 
-[Click here to access the site](https://amfairley.github.io/memorycards/)
+## Table of Contents
 
-## Version 1.01 is now live!
-We are very excited to announce version 1.01 is now live, incorporating all feedback. Thank you to those that have responded and we wish you fun and memorable times! Please find all updates and changes logged in the [Patch Notes](/PATCHNOTES.md).
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Game Instructions](#game-instructions)
+- [Settings](#settings)
+- [Accessibility](#accessibility)
+- [Wireframe](#wireframe)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Features
+
+- **Responsive Design**: The game is responsive and works well on different devices.
+- **Pause and Resume**: You can pause and resume the game at any time.
+- **Settings**: Customize the game settings according to your preferences.
+- **Score and Timer**: Displays the current score and the remaining time.
+- **Accessible**: The game meets accessibility guidelines for a better user experience.
+
+## Getting Started
+
+### Prerequisites
+
+- A modern web browser (e.g., Chrome, Firefox, Edge, Safari)
+
+### Installation
+
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/Apostl01/Heyden.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```sh
+    cd memory-game
+    ```
+
+3. Open `index.html` in your preferred web browser.
+
+## Game Instructions
+https://apostle01.github.io/HEYDEN/instructions.html
+
+1. Click on a card to reveal the emoji.
+2. Click on another card to find the matching emoji.
+3. If the emojis match, the cards will stay revealed. If they don't, both cards will be hidden again.
+4. The game ends when all pairs are matched or the timer runs out.
+5. Your final score will be displayed at the end of the game.
+
+## Settings
+https://apostle01.github.io/HEYDEN/settings.html
+
+The settings page allows you to customize the game:
+
+- **Difficulty Level**: Adjust the number of card pairs and the time limit.
+
+## Accessibility
+
+- **Keyboard Navigation**: You can navigate the game using the keyboard.
+- **Screen Reader Support**: The game is compatible with screen readers.
+
+## Wireframe
+
+![Memory Game Wireframe](docs/wireframe.png)
+
+### Main Page
+- A header with navigation links to Home, Instructions, and Settings.
+- A game container with cards, score display, timer, pause, and exit buttons.
+
+### Settings Page
+- Options to select difficulty level and theme.
+
+## Screenshots
+
+### Main Game Screen
+![Main Game Screen](docs/Home.png)
+
+### Settings Page
+![Settings Page](docs/settings.png)
+
+## Technologies Used
+
+- **HTML5**: Structure of the game.
+- **CSS3**: Styling and layout.
+- **JavaScript**: Game logic and interactivity.
+
+## Contributing
+
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+
+![A mock-up image of the website](docs/website.png)
+
+[Click here to access the site](https://Apostle01.github.io/Heyden/)
+
+
 
 ---
 
 ## Table Of Contents
-- [](#)
-- [Memory Cards](#memory-cards)
-  - [Version 1.01 is now live!](#version-101-is-now-live)
-  - [Table Of Contents](#table-of-contents)
-  - [Project Goals](#project-goals)
-    - [User Goals](#user-goals)
-    - [Site Owner Goals](#site-owner-goals)
-    - [Developer Goals](#developer-goals)
-  - [User Stories](#user-stories)
-    - [First Time Visitor Goals](#first-time-visitor-goals)
-    - [Returning Visitor Goals](#returning-visitor-goals)
-    - [Frequent Visitor Goals](#frequent-visitor-goals)
-  - [Five Planes of UX](#five-planes-of-ux)
-    - [Strategy](#strategy)
-      - [Viability and Feasibility](#viability-and-feasibility)
-    - [Scope](#scope)
-      - [Content Requirements](#content-requirements)
-        - [Section: Navigation Bar](#section-navigation-bar)
-        - [Section: Footer](#section-footer)
-        - [Webpage: Homepage](#webpage-homepage)
-        - [Webpage: How to play](#webpage-how-to-play)
-        - [Webpage: Contact me](#webpage-contact-me)
-        - [Webpage: 404](#webpage-404)
-    - [Structure](#structure)
-      - [Overall Structure](#overall-structure)
-      - [Information Architecture](#information-architecture)
-      - [Interactive Experience](#interactive-experience)
-    - [Skeleton](#skeleton)
-      - [Wireframes](#wireframes)
-        - [Home page](#home-page)
-        - [How to play](#how-to-play)
-        - [Contact me](#contact-me)
-      - [Changes during development](#changes-during-development)
-    - [Surface](#surface)
-      - [Colour Scheme](#colour-scheme)
-      - [Typography](#typography)
-      - [Images](#images)
-    - [Features](#features)
-      - [The Game Area](#the-game-area)
-      - [Browser tab:](#browser-tab)
-      - [Website Header](#website-header)
-      - [How To Play](#how-to-play-1)
-      - [Contact Me](#contact-me-1)
-      - [Sequence Select](#sequence-select)
-      - [Sequence Selector Error Modal](#sequence-selector-error-modal)
-      - [Play Now Button](#play-now-button)
-      - [Sequence Length Display](#sequence-length-display)
-      - [Playing Card Display](#playing-card-display)
-      - [Guess Button](#guess-button)
-      - [Guessing Table](#guessing-table)
-      - [Guessing Table Error Modal](#guessing-table-error-modal)
-      - [Results Modal](#results-modal)
-      - [Reset Button](#reset-button)
-      - [Website Footer](#website-footer)
-      - [404 Page Message](#404-page-message)
-    - [Future Development](#future-development)
-  - [Technologies Used](#technologies-used)
-    - [Languages](#languages)
-    - [Frameworks](#frameworks)
-    - [Tools](#tools)
-  - [Testing](#testing)
-  - [Bugs](#bugs)
-    - [Known Bugs](#known-bugs)
-    - [Mistakes](#mistakes)
-  - [Deployment](#deployment)
-    - [Deployment to GitHub pages](#deployment-to-github-pages)
-    - [Forking The Repository](#forking-the-repository)
-    - [Deploying Locally](#deploying-locally)
-    - [Addition of 404.html](#addition-of-404html)
-  - [Credits](#credits)
-    - [Documentation](#documentation)
-    - [Media](#media)
-    - [Code](#code)
-  - [Acknowledgements](#acknowledgements)
 
 ## Project Goals
 
@@ -137,39 +170,24 @@ We are very excited to announce version 1.01 is now live, incorporating all feed
 12. As a Frequent Visitor, I want to be able to see my chosen sequence length after the game starts.
 13. As a Frequent Visitor, I want to be able to play the game on different devices.
 
-## Five Planes of UX
 
-### Strategy
-- **What value does the project provide?** This memory game website will provide a fun and enjoyable way for users to test and improve upon their memory.
-- **What are the business needs?** The business in this case would be the developer, who intends to produce a fun, responsive, and interactive website. Their needs would be an engaging game and a way for the user to contact and give feedback to the developer.
-- **Who is the target audience?** The target audience are those interested in memory games or brain training games. This can range from casual players, those training for memory challenges such as the [World Memory Championships](https://www.worldmemorychampionships.com/sport/), or for childhood development. 
-- **What are the user requirements and expectations?**
-    - A simple and intuitive navigation system
-    - Responsiveness from button clicks and mouse hover
-    - Able to quickly learn how to play the game
-    - All functions and links work as expected
-    - External links open in a new browser tab
-    - The design and functionality on the site works regardless of screen size
-    - Contact information is readily available
-    - An obvious sign that the user has accessed a page that does not exist
-    - Accessibility
 
 #### Viability and Feasibility
 Followed is an analysis of the above user and business needs ranked from 1 (least important/viable) to 5 (most important/viable):
-|   Task |   Importance | Viability/Feasibility |
-| --------- | ------------- | ----------------- |
-| Card Memory Game | 5 | 5 |
-| A way to give feedback to the developer | 5 | 5 |
-| Responsive on all devices | 5 | 5 |
-| Different difficulties | 3 | 5 |
-| 404 page | 4 | 4 |
-| How to play | 3 | 4 |
-| Link to developer GitHub | 2 | 5 |
-| A reset button | 3 | 3 |
-| Knowing if individual answers are correct | 3 | 3 |
-| Knowing the final score | 5 | 5 |
-| Preventing the user entering invalid values | 5 | 3 |
-| A way to tune the difficult of the game | 3 | 5 |
+| Task                                        | Importance | Viability/Feasibility |
+| ------------------------------------------- | ---------- | --------------------- |
+| Card Memory Game                            | 5          | 5                     |
+| A way to give feedback to the developer     | 5          | 5                     |
+| Responsive on all devices                   | 5          | 5                     |
+| Different difficulties                      | 3          | 5                     |
+| 404 page                                    | 4          | 4                     |
+| How to play                                 | 3          | 4                     |
+| Link to developer GitHub                    | 2          | 5                     |
+| A reset button                              | 3          | 3                     |
+| Knowing if individual answers are correct   | 3          | 3                     |
+| Knowing the final score                     | 5          | 5                     |
+| Preventing the user entering invalid values | 5          | 3                     |
+| A way to tune the difficult of the game     | 3          | 5                     |
 
 Based on the above assessment, all the tasks look to be implementable.
 
@@ -201,17 +219,12 @@ A mobile-first approach is taken to ensure optimal performance on mobile devices
 ##### Webpage: Contact me
 - The contact me page will house a text box, allowing the user to send a message to the developer's email using an API.
 
-##### Webpage: 404
-- The 404 page will inform the user that the page that they have tried to access does not exist.
-- It will provide a link back to the homepage.
-
 ### Structure
 
 #### Overall Structure
 Each page will consist of:
 - **Navigation bar**: Meets the navigation requirement.
 - **Main section**: Meeting the page-specific requirements.
-- **Footer**: Meeting the requirement for a link to the developer's GitHub profile.
 
 Required pages and their main sections:
 - **Homepage**: This page will meet the requirement for an interactive game.
@@ -230,9 +243,6 @@ Required pages and their main sections:
         If the two cards do not match, they are flipped back face-down after a short delay.
          Continue flipping cards to find all the matching pairs.
         The game ends when all pairs are found and all cards are face-up.
-- **404**: This page will meet the requirement for alerting users when they have accessed a page that does not exist.
-    1. This page will have a message informing the user that they have tried to access a page that does not exist.
-    2. This page will have a link back to the home/game page.
 
 #### Information Architecture
 The same navigation bar and footer will be implemented on each page to create a consistent website that is pleasing to look at and easy to use.
@@ -247,24 +257,8 @@ There will be no sub-category navigation links within each webpage.
     - Click on Reset button to begin the game.
     - There will be feedback on score and congratulations message.
 
-### Skeleton
-
-[Balsamiq Wireframes](https://balsamiq.com/) was used during this section to create wireframes.
 
 #### Wireframes
-
-##### Home page
-- [Mobile](documentation/wireframes/home_mobile.png)
-- [Tablet](documentation/wireframes/home_tablet.png)
-- [Desktop](documentation/wireframes/home_desktop.png)
-##### How to play
-- [Mobile](documentation/wireframes/how_to_play_mobile.png)
-- [Tablet](documentation/wireframes/how_to_play_tablet.png)
-- [Desktop](documentation/wireframes/how_to_play_desktop.png)
-##### Contact me
-- [Mobile](documentation/wireframes/contact_me_mobile.png)
-- [Tablet](documentation/wireframes/contact_me_tablet.png)
-- [Desktop](documentation/wireframes/contact_me_desktop.png)
 
 #### Changes during development
 The decision was taken to after reviews from tutor. So I added an instruction and settings page to help change it from just a 0ne page website.
@@ -553,17 +547,7 @@ For an in depth description of the functionality of the game area, please see th
 <details><summary>GitHub hover</summary>
 <img src="/documentation/features/hover-github.png">
 </details>
-- User stories covered: 1, 7, 11.
 
-#### 404 Page Message
-<details><summary>404 message</summary>
-<img src="/documentation/features/message-404.png">
-</details>
-<details><summary>404 message hover</summary>
-<img src="/documentation/features/message-404-hover.png">
-</details>
-
-- The 404 page displays a message informing the user that they have made a wrong turn and directs them back to the homepage.
 - The message is styled as a playing card in keeping with the site design and the value is displayed as 404 as a clear indicator to the user.
 - An anchor tag was used to link back to the home page rather than an automatic redirection after a set time for accessibility reasons; some users would read the message quickly and get impatient with an automatic redirection and other users may not finish reading the message before being redirected automatically, so an anchor tag was used to suit all users.
 - The anchor tag message is located within its own rectangular div, highlighting it as clickable and displays a similar hover animation as other clickable items.
@@ -787,50 +771,11 @@ $(".submit-guess").click(function() {
     } 
 });
 ```
-**Bug 5:**
-On smaller screen heights, the contact me modal contents became blurred like so: <br>
-![blurred modal](/documentation/bug-5-issue.png) <br>
-The problem turned out to be the border radius of the modal, so I added a media query to remove the border radius at and below screen sizes when the blurring occurred: <br>
 
-```css
-@media screen and (max-height: 660px) {
-    #contact-me-modal {
-        border-radius: 0;
-    }
-}
-```
-
-This fixed the issue: <br>
-![fixed modal](/documentation/bug-5-solution.png)<br>
-
-**Bug 6:**
-The sequence length label and button overlap on smaller screens, this is why a media query is set for the strange value of 464 pixels, because this is the screen size at which overlapping occurs. This media query fixes the overlap issue.
 
 ### Known Bugs
 There are no known current bugs on the website.
 
-### Mistakes
-- Git commit #100 did not start with a keyword before the description. Care will be taken to prevent this occuring in future.
-
-## Deployment
-
-### Deployment to GitHub pages
-
-This site was deployed using GitHub pages. To deploy your own site, you will need a GitHub account of your own and to put your code into a respository following this [handy guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories). Please follow these steps, with examples of my repository, to deploy your own repository to GitHub pages once you are logged in:
-- Once in the [GitHub repository](https://github.com/amfairley/memorycards), go to the Settings tab which can be found at the top of the page. 
-<details><summary>Setting tab location image</summary>
-<img src="/documentation/deployment/deployment-settings-tab.png">
-</details>
-
-- On the left hand side of the page there will be a series of sections; under the second heading named **Code and automation**; select the bottom option; **Pages**.
-<details><summary>Pages tab location image</summary>
-<img src="/documentation/deployment/deployment-pages-tab.png">
-</details>
-
-- Ensure your build and deployment source is **Deploy from a branch** which can be selected from a drop down menu under the **Build and Deployment** heading.
-<details><summary>Deploy from branch location image</summary>
-<img src="/documentation/deployment/deployment-deploy-from-branch.png">
-</details>
 
 - In the **Branch** section, click on the dropdown menu currently set to none and select the main branch, ensure that the folder is root, and click save.
 <details><summary>Main branch location image</summary>
@@ -870,40 +815,13 @@ git clone https://github.com/amfairley/memorycards.git
 There is also the option in the same green "<> Code" button to download all files as a ZIP folder or open the repository with GitHub Desktop.
 For any troubleshooting, please see the GitHub documentation that can be found [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
-### Addition of 404.html
-The 404 page was added in the following way:
-- Create a file named 404.html
-- Create the content and style as desired
-- Create a new file named 404.md
-- Put the following code into the 404.md:
-
-```
----
-permalink: /404.html
----
-```
 
 ## Credits
 
-### Documentation
-- The code-institute [template](https://github.com/Code-Institute-Org/ci-full-template) was used in order to have necessary tools preinstalled.
-
 ### Media
-- The card images are from [Wikipedia](https://en.wikipedia.org/wiki/Standard_52-card_deck). They are the work of [Dmitry Formin](https://commons.wikimedia.org/wiki/User:Dmitry_Fomin) who has dedicated these images to the public domain under the copywrite code [CC0]( https://creativecommons.org/publicdomain/zero/1.0/).
-
-### Code
-**Fischer Yates Shuffling Algorithm**
-This code was put together with help from [stack overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array/43409054) and [Bro Code](https://www.youtube.com/watch?v=FGAUekwri1Q) on YouTube. 
-
-**EmailJS**
-Code lines in [emailjs.js](/assets/scripts/emailjs.js) are taken from the [emailjs documentation](https://www.emailjs.com/docs/tutorial/creating-contact-form/) along with the emailjs SDK link and initialise emailjs scripts at the bottom of the HTML body element. These sections in the html files have been obfuscated using [obfuscator.io](https://www.obfuscator.io/) for security reasons.
-
-**Google Analytics**
-The google analytics script is added at the bottom of the head element on each html page, taken from the google analytics tagging instructions.
-
+Youtube videos
 
 ## Acknowledgements
-- My mentor [Julia Konovalova](https://github.com/IuliiaKonovalova) for their continued guidance and support with this project
 - [Code Institute](https://codeinstitute.net/global/) Slack community members for their support and help
 - My fellow [Code Institute](https://codeinstitute.net/global/) learning cohort for all of their advice and support
 - My friends, family, and colleagues who provided essential user tests to get the game to the state it is in today
