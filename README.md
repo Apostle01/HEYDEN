@@ -1,4 +1,4 @@
-# ![Website logo](/documentation/site-logo.png)
+# ![Website logo](/docs/am-i-responsive.png)
 
 ---
 
@@ -51,7 +51,6 @@ We are very excited to announce version 1.01 is now live, incorporating all feed
         - [Home page](#home-page)
         - [How to play](#how-to-play)
         - [Contact me](#contact-me)
-        - [404](#404)
       - [Changes during development](#changes-during-development)
     - [Surface](#surface)
       - [Colour Scheme](#colour-scheme)
@@ -224,14 +223,13 @@ Required pages and their main sections:
         - The amount of shuffled cards will be displayed to the user.
         - The shuffled cards will then be hidden and the user must recreate the sequence.
         - The user will be informed of their final score.
-- **How to play**: This page will meet the requirement for an explanation of gameplay.
-    1. This page will have a hero image and title allowing the user to quickly gauge the intent of the page.
-    2. This page will house the rules for the game.
-    3. It must include how to play the game and what the functions of the buttons are.
-    4. There will be an image to break up the text and make it more appealing to the user.
-- **Contact me**: This page will meet the requirement for allowing players to contact the developer.
-    1. There will be a page title indicating the purpose of the page.
-    2. This page will have a text box and a submit button allowing messages to be sent to the developer's email address.
+- **How to play**
+        - Click on a card to flip it over and reveal    its   symbol.
+        Click on a second card to flip it over and reveal its symbol.
+        If the two cards match, they remain face-up.
+        If the two cards do not match, they are flipped back face-down after a short delay.
+         Continue flipping cards to find all the matching pairs.
+        The game ends when all pairs are found and all cards are face-up.
 - **404**: This page will meet the requirement for alerting users when they have accessed a page that does not exist.
     1. This page will have a message informing the user that they have tried to access a page that does not exist.
     2. This page will have a link back to the home/game page.
@@ -244,10 +242,10 @@ There will be no sub-category navigation links within each webpage.
 #### Interactive Experience
 - **The website**: Clickable links will have animated effects on hover or click, providing clear feedback to the user. All external links such as the GitHub profile will open in a new tab. Content hinting will be used where possible to influence the user to scroll down and uncover new content on the pages.
 - **The game**: 
-    - The game will work by firstly having the user select the length of a sequence to memorise. 
-    - When prompted a pack of cards will be shuffled and the entered number of cards will be shown on the screen.
-    - Upon another prompt, the cards will disappear and a table allowing the user to select the cards will appear.
-    - There will be feedback on whether the user is correct/incorrect with their guesses.
+    - The game will work by firstly having the user select the level of expectise. 
+    - When settings button is clicked, the user will then choose their level from 3 different levels.
+    - Click on Reset button to begin the game.
+    - There will be feedback on score and congratulations message.
 
 ### Skeleton
 
@@ -267,17 +265,9 @@ There will be no sub-category navigation links within each webpage.
 - [Mobile](documentation/wireframes/contact_me_mobile.png)
 - [Tablet](documentation/wireframes/contact_me_tablet.png)
 - [Desktop](documentation/wireframes/contact_me_desktop.png)
-##### 404
-- [Mobile](documentation/wireframes/404_mobile.png)
-- [Tablet](documentation/wireframes/404_tablet.png)
-- [Desktop](documentation/wireframes/404_desktop.png)
 
 #### Changes during development
-The decision was taken to reduce the website to a single page, replacing the how-to and contact-me pages with modals instead. This resulted in the following changes:
-- Change to the information architecture: no internal links are required, resulting in a 1-page website providing the full proposed value to the user and developer on a single intuitive page
-- The nav bar no longer requires a home section and as it will be a 1-page website any styling to identify the current page to the user will not be required
-- The how-to-play and contact-me pages are replaced with modals providing the same intended value as the separate pages would have had
-- The how-to-play modal no longer requires a hero image nor an image to break up the text, as the design of the modal will make it aesthetically pleasing to the user
+The decision was taken to after reviews from tutor. So I added an instruction and settings page to help change it from just a 0ne page website.
 
 ### Surface
 

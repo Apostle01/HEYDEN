@@ -13,6 +13,21 @@ body {
     background-color: #0a3c2f;
 }
 
+.instruction {
+    color: #1f1f1f;
+    background-color: #65e7cb;
+}
+
+.settings {
+    color: #0000ad;
+    background-color: #58e4c3;
+}
+
+.index.html {
+    color: #00002e;
+    background-color: #25cba1;
+}
+
 .container {
     position: relative;
     display: flex;
@@ -22,6 +37,11 @@ body {
     gap: 10px;
     background: #0d614b;
     padding: 40px 60px;
+}
+
+h1 {
+    color: #ededed;
+    background-color: #0b654d;
 }
 
 h2 {
@@ -96,7 +116,7 @@ h2 {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .scorebox {
