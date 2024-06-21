@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     background: #0d614b;
     padding: 40px 60px;
 }
@@ -37,30 +37,13 @@ h2 {
     font-size: 1.5em;
     color: #fff;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .paused {
     opacity: 0.5;
     pointer-events: none; /* Disable interactions */
 }
-
-/* .paused-message {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2em;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 1em;
-    display: none;
-    z-index: 10;
-}
-
-.paused .paused-message {
-    display: block;
-} */
 
 .pause {
     padding: 15px 20px;
@@ -75,7 +58,7 @@ h2 {
 } 
 
 .reset {
-    padding: 15px 20px;
+    /* padding: 15px 20px; */
     color: #267c65;
     background: #fff;
     border: none;
@@ -94,8 +77,8 @@ h2 {
 }
 
 .game-container {
-    width: 430px;
-    height: 430px;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +96,7 @@ h2 {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .scorebox {
@@ -128,7 +111,7 @@ h2 {
     text-align: center;
     color: #209d7b;
     font-size: 3em;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
 .item {
