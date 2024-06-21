@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Memory Game | Javascript</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="keyword" content="memory,card,game,emojis,brain testing,memorisation">
+    <meta name="keywords" content="memory, card, game, emojis, brain testing, memorisation">
     <meta name="description" content="Enjoy a fun memory game">
     <meta name="author" content="Jewel Kenyah-Damptey">
 </head>
 <body>
     <header role="banner">
         <nav role="navigation" aria-label="Main Navigation">
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="instructions" class="#">Instructions</a></li>
-            <li><a href="settings" id="settings">Settings</a></li>
-          </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instructions.html">Instructions</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
         </nav>
     </header>
     
@@ -24,34 +24,13 @@
         <h1>Memory Game</h1>
         <div class="game" aria-live="polite"></div>
         <div class="score">Score: <span id="score">0</span></div>
-        <div class="timer">Time: <span id="timer">0</span></div>
-        <button class="pause" id="pause-button">Pause Game</button>
+        <div class="timer">Time: <span id="timer">60</span></div>
+        <button id="pauseGame">Pause Game</button>
+        <button id="exitGame">Exit Game</button>
         <button class="reset" onclick="window.location.reload();">Reset Game</button>
     </main>
-    <!-- <div class="containner">
-        <h2>Memory Game</h2>
-        <div class="game"></div>
-        <div class="score">Score: <span id="score">0</span></div>
-        <div class="timer">Time: <span id="timer">0</span></div>
-        <button class="pause" id="pause-button">Pause Game</button>
-        <button class="reset" onclick="window.location.reload();">Reset Game</button>
-    </div> 
-     -->
-</body>
-<footer role="contentinfo">
-    <p><a href="#" id="accessibility-info">Accessibility Information</a> | <a href="#" id="privacy-policy">Privacy Policy</a></p>
-</footer>
+    
     <script src="js/script.js"></script>
     <script src="src/game.js"></script>
-    <script>
-        document.getElementById('pause-button').addEventListener('click', function() {
-            // Assuming there's a function in game.js to pause the game
-            if (typeof pauseGame === 'function') {
-                pauseGame();
-            } else {
-                console.log('Pause function not implemented yet.');
-            }
-        });
-    </script>
+</body>
 </html>
-

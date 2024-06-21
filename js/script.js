@@ -4,7 +4,7 @@ const emojis = ["❤️","❤️","😍","😍","😎","😎","🤣","🤣","✌
 let game = {
     score: 0,
     timer: 60, // Initial time in seconds
-    // Other properties...
+    timerInterval: null
 };
 
 // Function to start the timer
@@ -13,16 +13,21 @@ function startTimer() {
     timerDisplay.innerText = game.timer;
 
     // Update the timer every second
-    let timerInterval = setInterval(() => {
+    game.timerInterval = setInterval(() => {
         game.timer--;
         timerDisplay.innerText = game.timer;
 
         // End the game when the timer reaches 0
         if (game.timer === 0) {
-            clearInterval(timerInterval);
+            clearInterval(game.timerInterval);
             endGame();
         }
     }, 1000); // Update timer every 1000 milliseconds (1 second)
+}
+
+// Function to stop the timer
+function stopTimer() {
+    clearInterval(game.timerInterval);
 }
 
 // Function to initialize the game
@@ -70,6 +75,7 @@ function handleBoxClick() {
 function createGameBoxes() {
     let shuffledEmojis = emojis.sort(() => Math.random() - 0.5);
     let gameContainer = document.querySelector('.game');
+    gameContainer.innerHTML = ''; // Clear existing boxes
     shuffledEmojis.forEach(emoji => {
         let box = document.createElement('div');
         box.className = 'item';
@@ -79,9 +85,20 @@ function createGameBoxes() {
     });
 }
 
+let isPaused = false;
+
 function pauseGame() {
-    if (lockBoard) return;
-    clearInterval(timer);
+    if (isPaused) {
+        startTimer();
+        document.querySelector('.game').classList.remove('paused');
+        document.getElementById('pauseGame').textContent = 'Pause Game';
+        isPaused = false;
+    } else {
+        stopTimer();
+        document.querySelector('.game').classList.add('paused');
+        document.getElementById('pauseGame').textContent = 'Resume Game';
+        isPaused = true;
+    }
 }
 
 function exitGame() {
@@ -94,3 +111,6 @@ function exitGame() {
 // Call initializeGame() function to start the game
 initializeGame();
 createGameBoxes();
+
+document.getElementById('pauseGame').addEventListener('click', pauseGame);
+document.getElementById('exitGame').addEventListener('click', exitGame);

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game Settings | Javascript</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="keywords" content="memory, card, game, settings, customization">
+    <meta name="description" content="Customize your memory game settings">
+    <meta name="author" content="Jewel Kenyah-Damptey">
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instruction.html">Instructions</a></li>
+                <li><a href="settings.html" class="active">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container" role="main">
+        <h1>Game Settings</h1>
+        <form id="settings-form">
+            <section>
+                <!-- <label for="theme">Select Theme:</label>
+                <select id="theme" name="theme">
+                    <option value="default">Default</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="animals">Animals</option>
+                    <option value="sports">Sports</option>
+                </select> -->
+            </section>
+            <section>
+                <label for="difficulty">Select Difficulty:</label>
+                <select id="difficulty" name="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </section>
+            <section>
+                <label for="timer">Enable Timer:</label>
+                <input type="checkbox" id="timer" name="timer" checked>
+            </section>
+            <button type="submit">Save Settings</button>
+        </form>
+        <button onclick="window.location.href='index.html'">Back to Game</button>
+    </main>
+    
+    <!-- <footer role="contentinfo">
+        <p><a href="#" id="accessibility-info">Accessibility Information</a> | <a href="#" id="privacy-policy">Privacy Policy</a></p>
+    </footer> -->
+
+    <script>
+        document.getElementById('settings-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const theme = document.getElementById('theme').value;
+            const difficulty = document.getElementById('difficulty').value;
+            const timerEnabled = document.getElementById('timer').checked;
+
+            localStorage.setItem('gameSettings', JSON.stringify({ theme, difficulty, timerEnabled }));
+            alert('Settings saved!');
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedSettings = JSON.parse(localStorage.getItem('gameSettings'));
+            if (savedSettings) {
+                document.getElementById('theme').value = savedSettings.theme;
+                document.getElementById('difficulty').value = savedSettings.difficulty;
+                document.getElementById('timer').checked = savedSettings.timerEnabled;
+            }
+        });
+    </script>
+</body>
+</html>
