@@ -301,6 +301,10 @@ I researched clear legible typefaces that will enhance the user experience of th
 ## Testing
 For the website testing, please see the separate [TESTING.md](/TESTING.md) file.
 
+### HTML Validator
+-[Html-checked](docs/W3Validator.png)
+-[CSS-checked](docs/CSS.png)
+
 ### Wave testing
  -[Settings Page](docs/Wave1.png)
 - Clicking or typing this link into your URL bar will take you to your deployed website. Congratulations! You can then manually test the functionality of your website following along with my [TESTING.md](/TESTING.md) procedure.
