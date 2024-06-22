@@ -10,23 +10,24 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #65e7cb;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 
 .instruction {
     color: #0000ff;
-    background-color: #b5f2e6;
+    background-color: #ffffff;
 }
 
 .settings {
     color: #0000ff;
-    background-color: #b5f2e6;
+    background-color: #ffffff;
 }
 
 .index.html {
     color: #0000ff;
-    background-color: #b5f2e6;
+    background-color: #ffffff;
 }
 
 .container {
