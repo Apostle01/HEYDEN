@@ -297,7 +297,18 @@ I researched clear legible typefaces that will enhance the user experience of th
 	* Used for version control
 3. [GitHub](https://github.com/)
 	* Used to store the code
-
+4. Balsamiq Wireframes
+	*Used to create wireframes for the project
+5. UTF-8 characters
+	*Used for the playing card suit UTF-8 html codes
+6. Chrome Dev Tools
+	*Used for testing the webpage during development and testing the performance using Lighthouse
+7. W3C HTML Validation Service
+	*Used to validate the HTML code
+8. W3C Jigsaw CSS Validation Service
+	*Used to validate the CSS code
+9. Wave Web Accessibility Evaluation Tool
+	*Used to validate the accessibility of the web page
 ## Testing
 For the website testing, please see the separate [TESTING.md](/TESTING.md) file.
 
